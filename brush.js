@@ -58,33 +58,27 @@ function Brush() {
       css: 'string'
     },
 
-
-
-
-
     {
-      regex: /^\s*(#|&)/g
-      css: 'FIXME'
-    },
-
-
-    {
-      regex: /\{\$[a-zA-Z]+ .+\}/g,
-      css: 'color1'
+      regex: /^\s*(#|&).+/gm
+      css: 'preprocessor'
     },
     {
-      regex: /\b[\d\.]+\b/g,
+      regex: /'.+'/g,
       css: 'value'
     },
     {
-      regex: /\$[a-zA-Z0-9]+\b/g,
+      regex: /-?\b[\d\.]+\b/g,
       css: 'value'
     },
     {
       regex: new RegExp(this.getKeywords(keywords), 'gmi'),
-      css: 'keyword'
+      css: 'keyword bold'
     }
-		];
+    {
+      regex: new RegExp(this.getKeywords(builds), 'gmi'),
+      css: 'functions bold'
+    }
+    ];
 };
 
 Brush.prototype = new BrushBase();
