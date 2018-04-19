@@ -82,5 +82,5 @@ function Brush() {
 };
 
 Brush.prototype = new BrushBase();
-Brush.aliases = ['delphi', 'pascal', 'pas'];
+Brush.aliases = ['bsl', 'oscript'];
 module.exports = Brush;
