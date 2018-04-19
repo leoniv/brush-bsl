@@ -1,0 +1,46 @@
+{
+  "name": "brush-bsl",
+  "version": "1.0.0",
+  "description": "1C:Enterprise builtin lang brush module for SyntaxHighlighter.",
+  "keywords": [
+    "syntaxhighlighter",
+    "brush",
+    "bsl"
+  ],
+  "homepage": "https://github.com/leoniv/brush-bsl",
+  "bugs": "https://github.com/leoniv/brush-bsl/issues",
+  "author": {
+    "name": "Leonid Vlasov",
+    "url": "https://github.com/leoniv"
+  },
+  "main": "brush.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/leoniv/brush-bsl.git"
+  },
+  "scripts": {
+    "test": "babel-node --only='syntaxhighlighter-*,brush-*' node_modules/.bin/_mocha --opts mocha.opts test.js"
+  },
+  "dependencies": {
+    "brush-base": "^4.0.0",
+    "syntaxhighlighter-regex": "^4.0.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.4.5",
+    "babel-core": "^6.1.21",
+    "babel-preset-es2015": "^6.1.18",
+    "chai": "^3.4.1",
+    "mocha": "^2.3.4",
+    "syntaxhighlighter-match": "^4.0.0"
+  },
+  "engines": {
+    "node": ">=4",
+    "npm": ">=2"
+  },
+  "license": "MIT",
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  }
+}
