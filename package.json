@@ -26,8 +26,9 @@
     "syntaxhighlighter-regex": "^4.0.0"
   },
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.6.1",
+    "babel-cli": "^6.4.5",
+    "babel-core": "^6.1.21",
+    "babel-preset-es2015": "^6.1.18",
     "chai": "^3.4.1",
     "mocha": "^2.3.4",
     "syntaxhighlighter-match": "^4.0.0"
@@ -39,7 +40,7 @@
   "license": "MIT",
   "babel": {
     "presets": [
-      "env"
+      "es2015"
     ]
   }
 }
