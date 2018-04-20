@@ -2,7 +2,7 @@ var BrushBase = require('brush-base');
 var regexLib = require('syntaxhighlighter-regex').commonRegExp;
 
 function Brush() {
- var keywords = 'КонецПроцедуры EndProcedure КонецФункции EndFunction
+ var keywords = 'КонецПроцедуры EndProcedure КонецФункции EndFunction'+
                 'Прервать Break Продолжить Continue' +
                 'Возврат Return Если If' +
                 'Иначе Else ИначеЕсли ElsIf' +
@@ -57,9 +57,8 @@ function Brush() {
       regex: ("|^\s*\|)((?!\"\").)*?(\"|$)"),
       css: 'string'
     },
-
     {
-      regex: /^\s*(#|&).+/gm
+      regex: /^\s*(#|&).+/gm,
       css: 'preprocessor'
     },
     {
@@ -73,7 +72,7 @@ function Brush() {
     {
       regex: new RegExp(this.getKeywords(keywords), 'gmi'),
       css: 'keyword bold'
-    }
+    },
     {
       regex: new RegExp(this.getKeywords(builds), 'gmi'),
       css: 'functions bold'
