@@ -1,6 +1,6 @@
 {
   "name": "brush-bsl",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "1C:Enterprise builtin lang brush module for SyntaxHighlighter.",
   "keywords": [
     "syntaxhighlighter",
@@ -19,7 +19,7 @@
     "url": "https://github.com/leoniv/brush-bsl.git"
   },
   "scripts": {
-    "test": "babel-node --only='syntaxhighlighter-*,brush-*' node_modules/.bin/_mocha --opts mocha.opts test.js"
+    "test": "babel-node --only='syntaxhighlighter-*,brush-*.js' node_modules/.bin/_mocha --opts mocha.opts test.js"
   },
   "dependencies": {
     "brush-base": "^4.0.0",
