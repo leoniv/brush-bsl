@@ -26,8 +26,8 @@ function Brush() {
       .replace(/^\s+|\s+$/g, '')
       .replace(/\s+/g, '|');
 
-    const _b = '[^0-9a-zA-Zа-яА-Я\.#&()]|=|^|$'
-    return "("+_b+")(?:"+results+")(?:"+_b+")"
+    const _b = '[^a-zA-Zа-яА-Я\.#&\(\)]'
+    return "(^|"+_b+"|=)?(?:"+results+")(?:"+_b+"|;|$)"
   }
 
   this.regexList = [
