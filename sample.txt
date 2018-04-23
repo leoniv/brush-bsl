@@ -128,3 +128,31 @@
 Процедура Расш1_ПередЗаписью()
 
 КонецПроцедуры
+
+ = Неопределено
+ = Undefined
+ = Истина
+ = True
+ = Ложь
+ = False
+ = NULL
+
+ =Неопределено
+ =Undefined
+ =Истина
+ =True
+ =Ложь
+ =False
+ =NULL
+
+Неопределено
+Undefined
+Истина
+True
+Ложь
+False
+NULL
+
+Procedure a()
+
+EndProcedure
