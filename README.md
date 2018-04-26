@@ -7,14 +7,29 @@
 
 ## Regards!
 
- and thanks to developers of projects: 
+ and thanks to developers of projects:
 
  - [SyntaxHighlighter](https://github.com/syntaxhighlighter)
  - [xDrivenDevelopment/1c-syntax](https://github.com/xDrivenDevelopment/1c-syntax)
- 
+
 ## Usage
 
-Please see [Building Instructions](https://github.com/syntaxhighlighter/syntaxhighlighter/wiki/Building) on the [SyntaxHighlighter Wiki](https://github.com/syntaxhighlighter/syntaxhighlighter/wiki) for details.
+### For [SyntaxHighlighter v3](http://alexgorbatchev.com/SyntaxHighlighter/)
+
+Use pure js file [brush-dsl-v3.js](brush-bsl.v3/brash-bsl-v3.js)
+
+Demo see [index.html](brush-bsl.v3/index.html)
+
+### For SyntaxHighlighter v4
+
+Please see [Building Instructions](https://github.com/syntaxhighlighter/syntaxhighlighter/wiki/Building)
+on the [SyntaxHighlighter Wiki](https://github.com/syntaxhighlighter/syntaxhighlighter/wiki) for details.
+
+## Troubles
+
+1. Regexp `\b` word boundary dosn't work for non ASCII characters and any
+highlights looks not correctly.
+2. Errors while [brash.js](branch.js) building.
 
 ## License
 

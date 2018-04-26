@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>SyntaxHighlighter</title>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js' type='text/javascript'></script>
+<meta charset='UTF-8'>
+</head>
+<body class='no_sponsor'>
+<div id='content'>
+<div id='introduction'>
+<h2>Demo 1C:Enterprise embeded lang aka '.bsl' <a href="./brush-bsl-v3.js">./brash-bsl-v3.js</a> for
+  <a href="http://alexgorbatchev.com/SyntaxHighlighter">SyntaxHighlighter v3</a>
+</h2>
+<pre class="brush: bsl">
+
+Функция ПолучитьЭлементыМетаданногоПоОтбору(типМетаданного, видМетаданного, Количество=1, структураОтбора = Неопределено) Экспорт
+  //ПроверитьЗаполненность(типМетаданного, "типМетаданного");
+  //ПроверитьЗаполненность(видМетаданного, "видМетаданного");
+
+  Запрос = Новый Запрос;
+  Запрос.Текст = "ВЫБРАТЬ ПЕРВЫЕ "+Количество+"
+  |  *
+  |ИЗ
+  |  "+типМетаданного+"."+видМетаданного+" КАК Таб
+  |ГДЕ
+  |  Истина
+  |";
+
+  Если ЗначениеЗаполнено(структураОтбора) Тогда
+    Для каждого ключЗначение Из структураОтбора Цикл
+      имяРеквизита = ключЗначение.Ключ;
+      Запрос.Текст = Запрос.Текст + " И Таб."+имяРеквизита+" = &"+имяРеквизита+" ";
+      Запрос.УстановитьПараметр(имяРеквизита, ключЗначение.Значение);
+    КонецЦикла;
+  КонецЕсли;
+
+  РезультатЗапроса = Запрос.Выполнить();
+  ТЗ = РезультатЗапроса.Выгрузить();
+
+  Возврат ТЗ;
+КонецФункции
+</pre>
+</div>
+</div>
+<div id='clear'></div>
+  <link href='http://alexgorbatchev.com/SyntaxHighlighter/css/main.css' rel='stylesheet' type='text/css'>
+  <link href='http://alexgorbatchev.com/pub/sh/current/styles/shCore.css' rel='stylesheet' type='text/css'>
+  <link href='http://alexgorbatchev.com/pub/sh/current/styles/shThemeDefault.css' rel='stylesheet' type='text/css'>
+  <script src='http://alexgorbatchev.com/pub/sh/current/scripts/shCore.js' type='text/javascript'></script>
+  <script src='/http://alexgorbatchev.com/SyntaxHighlighter/scripts/main.js' type='text/javascript'></script>
+  <script src='./brush-bsl-v3.js' type='text/javascript'></script>
+  <script type="text/javascript">
+       SyntaxHighlighter.all()
+  </script>
+</body>
+</html>
