@@ -32,9 +32,10 @@ on the [SyntaxHighlighter Wiki](https://github.com/syntaxhighlighter/syntaxhighl
 
 ## Troubles
 
-1. Regexp `\b` word boundary dosn't work for non ASCII characters in browser
-and any highlights looks not correctly.
-2. Errors while [brash.js](branch.js) building.
+1. Regexp \b word boundary does not work for non ASCII characters in browser
+and some keywords highlights not correctly.
+
+2. Errors occurred while [brash.js](branch.js) building.
 
 ## License
 
