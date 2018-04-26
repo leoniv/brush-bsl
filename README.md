@@ -1,4 +1,6 @@
 [![Build Status](https://travis-ci.org/leoniv/brush-bsl.svg?branch=master)](https://travis-ci.org/leoniv/brush-bsl)
+![Downloads](https://img.shields.io/npm/dm/brush-bsl.svg)
+![Version](https://img.shields.io/npm/v/brush-bsl.svg)
 
 # brush-bsl
 
