@@ -16,7 +16,7 @@
 
 ### For [SyntaxHighlighter v3](http://alexgorbatchev.com/SyntaxHighlighter/)
 
-Use pure js file [brush-dsl-v3.js](brush.v3/brash-bsl-v3.js)
+Use pure js file [brush-dsl-v3.js](brush.v3/brush-bsl-v3.js)
 
 Demo [index.html](brush.v3/index.html). For looking clone and open in your
 favorite web browser:
